@@ -93,11 +93,11 @@ class Team(models.Model):
     guide_form = models.FileField(
         upload_to=user_directory_path, null=True, blank=True)
 
-    app_video = models.FileField(
-        upload_to=app_instance_path, null=True, blank=True)
+    # app_video = models.FileField(
+    #     upload_to=app_instance_path, null=True, blank=True)
 
-    product_video = models.FileField(
-        upload_to=product_instance_path, null=True, blank=True)
+    # product_video = models.FileField(
+    #     upload_to=product_instance_path, null=True, blank=True)
 
     profile_approved = models.BooleanField(default=False)
     guide_approved = models.BooleanField(default=False)

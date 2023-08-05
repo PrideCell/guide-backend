@@ -126,27 +126,18 @@ WSGI_APPLICATION = 'guide_project.wsgi.application'
 # DATABASES ={
 #     "default" : dj_database_url.parse(os.environ.get('DATABASE_URL'))
 # }
-# Development
-'''DATABASES = {
+# # Development
+
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}'''
-'''DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'GUIDE-TEST',
+        'NAME': 'GUIDE-TEST-NEW',
         'USER': 'techboizs',
         'PASSWORD': 'AAd!tyAA$ravi',
         'HOST': 'localhost',
         'PORT': '5432',
     }
-}'''
+}
 
 
 # Production DB to be used for railway personal
@@ -159,16 +150,16 @@ DATABASE_URL = "postgresql://postgres:Sw4rMcYObFabLSxPEEq3@containers-us-west-17
 '''DATABASES = {
     "default": dj_database_url.config(default=DATABASE_URL, conn_max_age=None),
 }'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'qgIacOVZWyoeqPOXpeT5',
-        'HOST': 'containers-us-west-116.railway.app',
-        'PORT': '7613',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'qgIacOVZWyoeqPOXpeT5',
+#         'HOST': 'containers-us-west-116.railway.app',
+#         'PORT': '7613',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
